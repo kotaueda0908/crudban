@@ -1,0 +1,8 @@
+<h1>新規投稿</h1>
+  <%= form_for(@post) do |f| %>
+    <h1>title</h1>
+      <%= f.text_field :title %>
+    <h1>text</h1>
+      <%= f.text_area :content %>
+      <%= f.submit '投稿', :class => 'postnew' %>
+  <% end %>
